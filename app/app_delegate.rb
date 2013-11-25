@@ -20,22 +20,23 @@ class AppDelegate
   def createMenuItem(name, action)
     NSMenuItem.alloc.initWithTitle(name, action: action, keyEquivalent: '')
   end
+  
+  def alert(message_text,button_title)
+    alert = NSAlert.alloc.init
+    alert.setMessageText message_text
+    alert.addButtonWithTitle button_title
+    alert.runModal
+  end
 
   def hideInvisibles
-    alert = NSAlert.alloc.init
     `defaults write com.apple.finder AppleShowAllFiles FALSE`
     `killall Finder`
-    alert.setMessageText "Invisible files are now hidden"
-    alert.addButtonWithTitle "OK"
-    alert.runModal
+    alert "Invisible files are now hidden", "OK"
   end
   
   def showInvisibles
     `defaults write com.apple.finder AppleShowAllFiles TRUE`
     `killall Finder`
-    alert = NSAlert.alloc.init
-    alert.setMessageText "Invisible files are now shown"
-    alert.addButtonWithTitle "Radical"
-    alert.runModal
+    alert "Invisible files are now shown", "OK dude"
   end
 end
