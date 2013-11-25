@@ -9,7 +9,9 @@ class AppDelegate
     @status_item = NSStatusBar.systemStatusBar.statusItemWithLength(NSVariableStatusItemLength).init
     @status_item.setMenu(@status_menu)
     @status_item.setHighlightMode(true)
-    @status_item.setTitle(@app_name)
+    # @status_item.setTitle(@app_name)
+
+    @status_item.setImage(NSImage.imageNamed("eye20.png"))
 
     @status_menu.addItem createMenuItem("About #{@app_name}", 'orderFrontStandardAboutPanel:')
     @status_menu.addItem createMenuItem("Hide Invisibles", 'hideInvisibles')
@@ -20,7 +22,7 @@ class AppDelegate
   def createMenuItem(name, action)
     NSMenuItem.alloc.initWithTitle(name, action: action, keyEquivalent: '')
   end
-  
+
   def alert(message_text,button_title)
     alert = NSAlert.alloc.init
     alert.setMessageText message_text
@@ -33,7 +35,7 @@ class AppDelegate
     `killall Finder`
     alert "Invisible files are now hidden", "OK"
   end
-  
+
   def showInvisibles
     `defaults write com.apple.finder AppleShowAllFiles TRUE`
     `killall Finder`
