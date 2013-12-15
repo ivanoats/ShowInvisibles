@@ -1,1 +1,3 @@
 .DS_Store
+build/*/**
+.repl_history
