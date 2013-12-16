@@ -8,7 +8,7 @@ This app was made as a learning project with [RubyMotion](http://www.rubymotion.
 
 Idea came from [article](http://osxdaily.com/2009/02/25/show-hidden-files-in-os-x/) on [osxdaily](http://osxdaily.com)
 
-Icon from [DesignModo](http://designmodo.com)'s [Flat UI Free](https://www.iconfinder.com/iconsets/flat-ui-icons-24-px#readme) set.
+Icon from [DesignModo](http://designmodo.com)'s [Flat UI Free](http://designmodo.com/flat-free/?u=697) set.
 
 App template from the [osx-status-bar-app-template](http://rubygems.org/gems/osx-status-bar-app-template).
 
