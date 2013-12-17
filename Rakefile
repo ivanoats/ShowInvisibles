@@ -14,6 +14,6 @@ Motion::Project::App.setup do |app|
   app.name = 'Show Invisibles'
   app.icon = "eye-dot.icns"
   app.copyright = "Copyright 2013 (C) Ivan Storck"
-  app.identifier = 'com.ivanstorck.ShowInvisibles'
+  app.identifier = 'K9XPZV7L63.com.ivanstorck.ShowInvisibles'
   app.info_plist['LSUIElement'] = true
 end
