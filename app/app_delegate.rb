@@ -11,7 +11,7 @@ class AppDelegate
     @status_item.setHighlightMode(true)
     # @status_item.setTitle(@app_name)
 
-    @status_item.setImage(NSImage.imageNamed("eye20.png"))
+    @status_item.setImage(NSImage.imageNamed("eye-dot_20x20x32.png"))
 
     @status_menu.addItem createMenuItem("About #{@app_name}", 'orderFrontStandardAboutPanel:')
     @status_menu.addItem createMenuItem("Hide Invisibles", 'hideInvisibles')
@@ -39,6 +39,6 @@ class AppDelegate
   def showInvisibles
     `defaults write com.apple.finder AppleShowAllFiles TRUE`
     `killall Finder`
-    alert "Invisible files are now shown", "OK dude"
+    alert "Invisible files are now shown", "OK"
   end
 end

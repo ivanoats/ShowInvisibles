@@ -6,7 +6,7 @@ This app was made as a learning project with [RubyMotion](http://www.rubymotion.
 
 ## Credits
 
-Idea came from [article](http://osxdaily.com/2009/02/25/show-hidden-files-in-os-x/) on [osxdaily](http://osxdaily.com)
+Idea came from this [article](http://osxdaily.com/2009/02/25/show-hidden-files-in-os-x/) on [osxdaily](http://osxdaily.com)
 
 Icon from [DesignModo](http://designmodo.com)'s [Flat UI Free](http://designmodo.com/flat-free/?u=697) set.
 
